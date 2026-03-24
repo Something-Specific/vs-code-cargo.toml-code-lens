@@ -1,0 +1,13 @@
+node_modules/
+dist/
+out/
+*.vsix
+.vscode-test/
+.DS_Store
+*.log
+.env
+.idea/
+*.swp
+*.swo
+*~
+.vscode/settings.json

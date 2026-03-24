@@ -1,0 +1,59 @@
+{
+  "name": "cargo-toml-lens",
+  "displayName": "Cargo.toml Lens",
+  "description": "Navigate to crate documentation, repository, and crates.io pages directly from Cargo.toml dependency lines.",
+  "version": "0.1.0",
+  "publisher": "SomethingSpecific",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "rust",
+    "cargo",
+    "toml",
+    "crates",
+    "dependencies"
+  ],
+  "activationEvents": [
+    "workspaceContains:**/Cargo.toml",
+    "onLanguage:toml"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cargo-toml-lens.clearCache",
+        "title": "Cargo: Clear Crate Info Cache"
+      }
+    ],
+    "configuration": {
+      "title": "Cargo.toml Lens",
+      "properties": {
+        "cargoTomlLens.enableCodeLens": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show inline CodeLens links (crates.io, docs.rs, repository) above each dependency in Cargo.toml."
+        },
+        "cargoTomlLens.showPathDeps": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show CodeLens and hover info for path-based (local) dependencies."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc --watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
