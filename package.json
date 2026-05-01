@@ -3,7 +3,7 @@
   "name": "cargo-quick-links",
   "displayName": "Cargo Quick Links",
   "description": "Navigate to crate documentation, repository, and crates.io pages directly from Cargo.toml dependency lines.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "something-specific",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "Other"
   ],
   "galleryBanner": {
-    "color": "#CE422B",
+    "color": "#2A3345",
     "theme": "dark"
   },
   "bugs": {
