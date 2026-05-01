@@ -1,4 +1,5 @@
 {
+  "icon": "icon.png",
   "name": "cargo-quick-links",
   "displayName": "Cargo Quick Links",
   "description": "Navigate to crate documentation, repository, and crates.io pages directly from Cargo.toml dependency lines.",
@@ -13,8 +14,17 @@
     "vscode": "^1.75.0"
   },
   "categories": [
+    "Programming Languages",
     "Other"
   ],
+  "galleryBanner": {
+    "color": "#CE422B",
+    "theme": "dark"
+  },
+  "bugs": {
+    "url": "https://github.com/Something-Specific/vs-code-cargo.toml-code-lens/issues"
+  },
+  "homepage": "https://github.com/Something-Specific/vs-code-cargo.toml-code-lens",
   "keywords": [
     "rust",
     "cargo",
